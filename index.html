@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance Dashboard</title>
+   <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div id="dashboard">
+    <h1>Personal Finance Dashboard</h1>
+    <div id="balance">Balance: ₹0.00</div>
+    <ul id="transactions"></ul>
+    <form id="addTransactionForm">
+        <input type="text" id="description" placeholder="Description" required>
+        <input type="number" id="amount" placeholder="Amount" required>
+        <select id="transactionType">
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+        </select>
+        <button type="button" onclick="addTransaction()">Add Transaction</button>
+    </form>
+    <div id="totals">
+        <span>Total Income: <span id="incomeTotal">₹0.00</span></span>
+        <span>Total Expenses: <span id="expenseTotal">₹0.00</span></span>
+    </div>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>
+
